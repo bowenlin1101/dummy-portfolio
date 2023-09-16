@@ -6,55 +6,188 @@
     </head>
 
     <body>
+        <nav>
+            <ul class="nav-bar">
+                <li class="nav-li">
+                <a href="#hero">
+                    Hero
+                </a>  
+                </li>
+                <li class="nav-li">
+                <a href="#about-me">
+                    About Me
+                </a> 
+                </li>
+                <li class="nav-li">
+                    <a href="#work-experience">
+                        Work Experience
+                    </a>
+                    </li>
+                <li class="nav-li">
+                <a href="#contact-me">
+                    Contact Me
+                </a>
+                </li>
+            </ul>
+        </nav>
+
         <header>
-           <h1>
-                <span>Hi, I am</span>
-                <br>
-                <span><b>Bowen Lin</b></span>
-                <br>
-                <span><h2>Aspiring Software Engineer</h2></span>
-                <a href="https://www.linkedin.com/in/bowen-lin-8149a8252/" target="_blank">Connect On LinkedIn</a>
-            </h1>
+            <section id="hero">
+                    <h1 id="hero-text">
+                        <span>Hi, I am</span>
+                        <br>
+                        <span><b>Bowen Lin</b></span>
+                        <br>
+                        <span><h2>Aspiring Software Engineer</h2></span>
+                        <a href="" target="_blank">Connect On LinkedIn</a>
+                    </h1>
+            </section>
         </header>
 
-
         <main>
-            <section id="projects">
-                <h3>Projects</h3>
-                <div class="project-container project-one">
-                    <img src="./images/project-one-ss.png">
-                    <div class="project-text-container">
-                        <a class="project-title" href="https://chrome.google.com/webstore/detail/channel-block-list-for-yo/kkmahjgakdpepelanmbgdcabbffoomlo" target="_blank">Youtube Channel Blocker</a>
-                        <span>
-                            This Chrome Extension, built using React and the Chrome API, empowers users to block content from specific YouTube channels, enhancing browsing by providing personalized feed curation and real-time content filtering.
-                        </span>
-                    </div>
-
+            <section id="about-me">
+                <br>
+                <div class="title">
+                    <h4>Enjoys</h4>
+                    <h5 class="title-list purple">
+                        <span class="purple"><b>learning</b></span>
+                        <br>
+                        <span>Music Theory</span>
+                        <br>
+                        <span>Cooking</span>
+                        <br>
+                        <span>Programming</span>
+                    </h5>
                 </div>
-
-                <div class="project-container project-two">
-                    <img src="./images/project-two-ss.png">
-                    <div class="project-text-container">
-                        <a class="project-title" href="https://bowenlin1101.github.io/snake-with-powerups/" target="_blank">Snake With Powerups</a>
-                        <span>
-                            A Snake game with Powerups was created using Vanilla HTML, CSS, and JavaScript. This project offers an engaging gaming experience with added power-up features, showcasing core game development skills with a lightweight tech stack.
-                        </span>
+                <br>
+                <!-- Carousel credit goes to Christian Schaefer from this website: https://css-tricks.com/css-only-carousel -->
+                <figure class="carousel">
+                    <ol class="carousel__viewport">
+                        <li id="carousel__slide1"
+                            tabindex="0"
+                            class="carousel__slide">
+                            <img class="carousel-image" src="./images/hobby-one-ss.jpg">
+                          <div class="carousel__snapper">
+                            <a href="#carousel__slide3"
+                               class="carousel__prev">Go to last slide</a>
+                            <a href="#carousel__slide2"
+                               class="carousel__next">Go to next slide</a>
+                          </div>
+                        </li>
+                        <li id="carousel__slide2"
+                            tabindex="0"
+                            class="carousel__slide">
+                            <img class="carousel-image" src="./images/cooking.webp">
+                          <div class="carousel__snapper"></div>
+                          <a href="#carousel__slide1"
+                             class="carousel__prev">Go to previous slide</a>
+                          <a href="#carousel__slide3"
+                             class="carousel__next">Go to next slide</a>
+                        </li>
+                        <li id="carousel__slide3"
+                            tabindex="0"
+                            class="carousel__slide">
+                            <img class="carousel-image" src="./images/programming.jpg">
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide2"
+                                class="carousel__prev">Go to previous slide</a>
+                            <a href="#carousel__slide1"
+                                class="carousel__next">Go to next slide</a>
+                        </li>
+                      </ol>
+                      <aside class="carousel__navigation">
+                        <ol class="carousel__navigation-list">
+                          <li class="carousel__navigation-item">
+                            <a href="#carousel__slide1"
+                               class="carousel__navigation-button">Go to slide 1</a>
+                          </li>
+                          <li class="carousel__navigation-item">
+                            <a href="#carousel__slide2"
+                               class="carousel__navigation-button">Go to slide 2</a>
+                          </li>
+                          <li class="carousel__navigation-item">
+                            <a href="#carousel__slide3"
+                               class="carousel__navigation-button">Go to slide 3</a>
+                          </li>
+                        </ol>
+                      </aside>
+                </figure>
+            </section>
+            <section id="work-experience">
+                <div class="title xtra-padding">
+                    <h4>Has</h4>
+                    <h5 class="title-list pink">
+                        <span class="pink"><b>worked at</b></span>
+                        <br>
+                        <span>Google</span>
+                        <br>
+                        <span>Uber</span>
+                        <br>
+                        <span>McDonalds</span>
+                    </h5>
+                </div>
+                <div id="reviews">
+                    <div class="review-container" id="google-rev">
+                        <h1 class="company-name">
+                            Google
+                        </h1>
+                        <p class="review-content">
+                            In the annals of Google history, Bowen's unparalleled achievement stands out: successfully Googling the price of a blender. "I would have wasted $5 had Bowen not told me the retail price" says random co-worker Bob. A legendary moment, forever etched in internet lore. 
+                        </p>
+                        <h1>
+                            - CEO of Google
+                        </h1>
+                    </div>
+                    <div class="review-container" id="uber-rev">
+                        <h1 class="company-name">
+                            Uber
+                        </h1>
+                        <p class="review-content">
+                            "Demonstrated valiant effort in driving me home. Of the 4 traffic lights on the way to my house, he ran the red on 5 of them. All the while, he was eating a Turkey Club Subway Sandwich, chewing with his mouth open. Can't say I would request him for my next ride."
+                        </p>
+                        <h1>
+                            - Peppa Pig
+                        </h1>
+                    </div>
+                    <div class="review-container" id="mcDonalds-rev">
+                        <h1 class="company-name">
+                            McDonalds
+                        </h1>
+                        <p class="review-content">
+                            This man should get a raise! He can cook 5 Whoppers in 2 minutes. He can also whip up 3 batches of Burger King Chicken Fries in 1 minute! Truly a valuable employee here at McDonalds
+                        </p>
+                        <h1>
+                            - Ronald McDonald
+                        </h1>
                     </div>
                 </div>
             </section>
+            <section id="contact-me">
+                <h5>Get in Touch</h5>
 
-            <section id="hobbies">
-                <h3>Hobbies</h3>
-                <div class="project-container hobby-one">
-                    <img src="./images/hobby-one-ss.jpg">
-                    <div class="project-text-container">
-                        <a class="project-title" >Playing Piano</a>
-                        <span>
-                            I love playing the piano and composing with music theory, as it allows me to express myself through beautiful melodies and create unique compositions.
-                        </span>
-                    </div>
+                <div id="icon-container">
+                    <img class="icon" src="./images/email.png">
+                    <img class="icon" src="./images/github.png">
+                    <img class="icon" src="./images/twitter.png">
+                </div>
+
+                <div id="form">
+                    <form>
+                        <label>First name:</label>
+                        <input type="text" placeholder="John">
+                        <label>Last name:</label>
+                        <input type="text" placeholder="Doe">
+                        <label>Message:</label>
+                        <textarea class="msg-textbox" type="text" placeholder="This is a message..."></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
             </section>
         </main>
+        <footer>
+            <p>
+                <span style="color: white;">Bowen</span><span>'s Dummy Portfolio</span>
+            </p>
+        </footer>
     </body>
 </html>
